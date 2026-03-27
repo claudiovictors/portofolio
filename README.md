@@ -31,7 +31,7 @@ Este é o meu portfólio profissional, desenvolvido com **React**, **TypeScript*
 
 ## 🌐 Deploy
 
-O projeto está otimizado para ser hospedado na **Vercel**.
+Acessa o meu portfólio [clique aqui](https://www.claudiovictor.vercel.app).
 
 ---
 Desenvolvido por [Cláudio Victor](https://github.com/claudiovictors)
