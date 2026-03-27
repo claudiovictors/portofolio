@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-gh-bg: #0D1117;
+  --color-gh-card: #161B22;
+  --color-gh-border: #21262D;
+  --color-gh-blue: #58A6FF;
+  --color-gh-text: #C9D1D9;
+  --color-gh-text-muted: #8B949E;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-gh-bg text-gh-text font-sans antialiased selection:bg-gh-blue/30 selection:text-gh-blue overflow-x-hidden;
+  }
+}
+
+.container-custom {
+  @apply max-w-6xl mx-auto px-6 md:px-12;
+}
+
+.glass-card {
+  @apply bg-gh-card border border-gh-border rounded-lg transition-all duration-300;
+}
+
+.nav-link {
+  @apply text-gh-text-muted hover:text-gh-blue transition-all duration-200 text-sm font-medium relative py-1;
+}
+
+.nav-link.active {
+  @apply text-gh-blue;
+}
+
+.nav-link.active::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-0.5 bg-gh-blue rounded-full;
+}
+
+.btn-primary {
+  @apply bg-gh-blue hover:bg-blue-400 text-gh-bg px-6 py-3 rounded-md font-bold transition-all duration-300 active:scale-95 inline-flex items-center justify-center shadow-sm hover:shadow-gh-blue/20;
+}
+
+.btn-secondary {
+  @apply border border-gh-border hover:border-gh-blue text-gh-text px-6 py-3 rounded-md font-bold transition-all duration-300 active:scale-95 inline-flex items-center justify-center;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold mb-16 flex items-center gap-4;
+}
+
+.section-number {
+  @apply text-gh-blue font-mono text-xl opacity-80;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at 50% 50%, rgba(88, 166, 255, 0.03) 0%, transparent 70%);
+}
+
+.skill-bar-bg {
+  @apply h-2 w-full bg-gh-border rounded-full overflow-hidden;
+}
+
+.skill-bar-fill {
+  @apply h-full bg-gh-blue rounded-full transition-all duration-1000 ease-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gh-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gh-border rounded-full hover:bg-gh-text-muted/30 transition-colors;
+}
