@@ -31,7 +31,7 @@ Este é o meu portfólio profissional, desenvolvido com **React**, **TypeScript*
 
 ## 🌐 Deploy
 
-Acessa o meu portfólio [clique aqui](https://www.claudiovictor.vercel.app).
+Acessa o meu portfólio [clique aqui](https://portofolio-six-gamma-54.vercel.app/).
 
 ---
 Desenvolvido por [Cláudio Victor](https://github.com/claudiovictors)
